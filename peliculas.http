@@ -1,16 +1,16 @@
-GET https://localhost:7074/api/peliculas
+GET http://localhost:3000/api/peliculas
 
 ###
 
-GET https://localhost:7074/api/peliculas?s=Dun
+GET http://localhost:3000/api/peliculas?s=Dun
 
 ###
 
-GET https://localhost:7074/api/peliculas/2
+GET http://localhost:3000/api/peliculas/2
 
 ###
 
-POST https://localhost:7074/api/peliculas
+POST http://localhost:3000/api/peliculas
 Content-Type: application/json
 
 {
@@ -23,18 +23,43 @@ Content-Type: application/json
 
 ###
 
-PUT https://localhost:7074/api/peliculas/16
+POST http://localhost:3000/api/peliculas
 Content-Type: application/json
 
 {
-    "peliculaid": 16,
-    "titulo": "pw patrol: la super pelicula",
-    "sinopsis": "Un meteorito magico aterrixa en adeventure cuty y otorga supepoderes a los cachorros de pow patrol",
-    "anio": 2024,
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGI4NTNlODItMGJlZi00OTIwLTlkM2ItMWFkZjJhZDIzMDc3XkEyXkFqcGdeQXVyMTEyNzQ1MTk0._V1_SX300.jpg",
-    "categorias": [1,2,3]
+    "titulo": "Guerra mundial Z",
+    "sinopsis": "Cuando el mundo comienza a ser invadido por una legión de muertos vivientes, Gerry Lane, un experto investigador de las Naciones Unidas, intentará evitar el fin de la civilización en una carrera contra el tiempo y el destino.",
+    "anio": "2013",
+    "poster": "https://m.media-amazon.com/images/I/91F5vt0PGAL._AC_UF894,1000_QL80_.jpg",
+    "categorias": [1,4]
 }
 
 ###
 
-DELETE https://localhost:7074/api/peliculas/19
+POST http://localhost:3000/api/peliculas
+Content-Type: application/json
+
+{
+    "titulo": "Elysium",
+    "sinopsis": "En el año 2159, los seres humanos se dividen en dos grupos: los ricos, que viven en la estación espacial Elysium, y todos los demás, que sobreviven como pueden en una Tierra devastada y superpoblada. ...",
+    "anio": "2013",
+    "poster": "https://m.media-amazon.com/images/I/918zXXTsajL._AC_UF894,1000_QL80_.jpg",
+    "categorias": [1,4,6]
+}
+
+###
+
+POST http://localhost:3000/api/peliculas
+Content-Type: application/json
+
+{
+    "titulo": "El amanecer de los muertos",
+    "sinopsis": "Un grupo de supervivientes debe cruzar el país para llegar a un refugio en San Francisco, mientras son perseguidos por hordas de zombies.",
+    "anio": "2004",
+    "poster": "https://pics.filmaffinity.com/Amanecer_de_los_muertos-401949088-large.jpg",
+    "categorias": [1,4,12]
+}
+
+###
+
+DELETE http://localhost:3000/api/peliculas/18
